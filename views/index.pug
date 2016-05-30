@@ -1,0 +1,21 @@
+doctype html
+html(lang='en')
+	head
+		meta(charset='UTF-8')
+		link(rel='stylesheet', type='text/css', href='stylesheets/normalize.css')
+		link(rel='stylesheet', type='text/css', href='stylesheets/styles.css')
+		title File Metadata Service
+	body
+		h1 File Metadata API: FCC Project
+		p Use this service to analyze an uploaded file's size.
+		h3 Instructions:
+		p Chose and upload a file. Submit it to see the size.
+		form(action="/upload", method="POST", enctype="multipart/form-data")
+			span #[strong Upload an image:] &nbsp;
+			input(type="file", name="file")
+			input(type="submit", value="Submit file")
+		div.footer
+			span.developer
+				small Developed by Zachary Clemans
+			span.copyright
+				small Copyright &copy; 2016 Zachary Clemans
