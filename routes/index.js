@@ -1,6 +1,6 @@
 var express = require('express');
 var multer = require('multer');
-var upload = multer({ dest: '../public/uploads/'});
+var upload = multer();
 var router = express.Router();
 
 router.get('/', (req, res) => {
